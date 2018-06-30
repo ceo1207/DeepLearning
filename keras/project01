@@ -34,7 +34,7 @@ model.add(Dense(10, activation='softmax'))
 model.compile(optimizer='rmsprop', loss='categorical_crossentropy', metrics=['accuracy'])
 history = model.fit(train_x, train_y_one_hot, epochs=5, batch_size=128, validation_data=(test_x, test_y_one_hot))
 result = model.evaluate(test_x, test_y_one_hot)
-
+print result
 
 # to see the training performance
 # keys ['acc', 'loss', 'val_acc', 'val_loss']
@@ -49,7 +49,9 @@ plt.plot(history.history['val_acc'], 'r')
 
 # visually test
 test_data = test_x[[0], :]
-labelPre = model.predict(test_data)
+labelPre = model.predict(test_data.reshape(1, 784))
 import numpy as np
 print np.argmax(labelPre)
-plt.imshow(test_data.reshape(28,28))
+plt.imshow(test_data.reshape(28, 28))
+
+model.save('mnist0630.h5')
