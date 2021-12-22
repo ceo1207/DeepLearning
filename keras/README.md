@@ -1,4 +1,4 @@
-+ project01 - 逻辑回归，识别手写数字 mnist
++ [project01](project01.py) - 逻辑回归，识别手写数字 mnist
 
 + project02 - 加载已训练的模型用于预测
 
