@@ -1,10 +1,10 @@
-project01 - 逻辑回归，识别手写数字
++ project01 - 逻辑回归，识别手写数字 mnist
 
-project02 - 加载已训练的模型用于预测
++ project02 - 加载已训练的模型用于预测
 
-project03 - 使用cnn预测cifar-10任务
++ project03 - 使用cnn预测cifar-10任务 
 
-tensorboard, checkpoint
+使用tensorboard监控训练的过程
 
 project04 - transfer learning
 
