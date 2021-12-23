@@ -6,7 +6,7 @@
 
 使用tensorboard监控训练的过程
 
-+ [project04](project04_face.py) 
++ [project04](project04_face.py) - 样例，还是多分类问题
 
 
 ---
